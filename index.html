@@ -4,16 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RFS Makine | Prototip & CNC & Tasarım</title>
-  <meta name="description" content="RFS Makine - CNC işleme, prototip üretim, makine tasarımı. Mühendislik projelerinizi hayata geçiriyoruz." />
-  <meta name="author" content="RFS Engineer" />
-  <meta property="og:title" content="RFS Makine | CNC & Prototip Tasarım" />
-  <meta property="og:description" content="RFS Makine ile prototipten üretime, makine tasarımında çözüm ortağınız." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rfsmakine.com" />
-  <meta property="og:image" content="https://rfsmakine.com/preview.jpg" />
-   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RFS Makine | Prototip & CNC & Tasarım</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="RFS Makine - CNC işleme, prototip üretim, makine tasarımı. Mühendislik projelerinizi hayata geçiriyoruz." />
@@ -38,6 +28,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
   <style>
     :root {
       --bg:#0f111a;
@@ -48,35 +39,171 @@
       --text:#f0f2fa;
       font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
     }
-    *{box-sizing:border-box;}
-    body{margin:0;background:linear-gradient(135deg,#0f111a 0%,#1f2337 100%);color:var(--text);line-height:1.5;}
-    .container{max-width:1080px;margin:0 auto;padding:1rem;}
-    header{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;flex-wrap:wrap;gap:10px;}
-    .logo{font-weight:700;font-size:1.25rem;letter-spacing:1px;}
-    nav a{margin-left:1rem;color:var(--text);text-decoration:none;font-size:.9rem;}
-    .btn{display:inline-block;padding:.65rem 1.2rem;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;transition:filter .2s;}
-    .btn:hover{filter:brightness(1.1);}
-    .hero{padding:3rem 0;display:grid;grid-template-columns:1fr;gap:2rem;}
-    .hero-text{max-width:700px;}
-    .badge{background:rgba(255,255,255,.07);display:inline-block;padding:6px 14px;border-radius:999px;font-size:.6rem;letter-spacing:1px;margin-bottom:8px;}
-    h1{margin:0;font-size:2.4rem;}
-    p{margin:1rem 0;font-size:1rem;}
-    .services, .projects, .contact{margin-top:4rem;}
-    .cards{display:grid;gap:1.5rem;margin-top:1rem;}
-    .card{background:var(--card);padding:1.5rem;border-radius:var(--radius);box-shadow:var(--shadow);position:relative;overflow:hidden;}
-    .card h3{margin-top:0;font-size:1.25rem;}
-    .grid-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));display:grid;}
-    .project-img{width:100%;border-radius:8px;display:block;margin-bottom:8px;object-fit:cover;height:160px;background:#222;}
-    .footer{margin-top:6rem;padding:2rem 0;border-top:1px solid rgba(255,255,255,.07);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.85rem;}
-    .social a{margin-right:10px;color:var(--text);text-decoration:none;}
-    .tag{background:rgba(255,255,255,.1);padding:4px 10px;border-radius:6px;font-size:.6rem;display:inline-block;margin-right:6px;margin-bottom:6px;}
-    .contact-form{display:grid;gap:10px;margin-top:10px;}
-    input, textarea{background:#0f111a;border:1px solid rgba(255,255,255,.15);padding:12px;border-radius:6px;color:var(--text);font-size:1rem;resize:vertical;}
-    .small{font-size:.8rem;color:rgba(255,255,255,.6);}
-    .inline-block{display:inline-block;}
-    @media(min-width:900px){
-      .hero{grid-template-columns:1fr 1fr;}
-      h1{font-size:3rem;}
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(135deg,#0f111a 0%,#1f2337 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-size: .9rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: .65rem 1.2rem;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: filter .2s;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+    }
+    .btn:hover {
+      filter: brightness(1.1);
+    }
+    .hero {
+      padding: 3rem 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .hero-text {
+      max-width: 700px;
+    }
+    .badge {
+      background: rgba(255,255,255,.07);
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: .6rem;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    p {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+    .services, .projects, .contact {
+      margin-top: 4rem;
+    }
+    .cards {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      display: grid;
+    }
+    .project-img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 8px;
+      object-fit: cover;
+      height: 160px;
+      background: #222;
+    }
+    .footer {
+      margin-top: 6rem;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: .85rem;
+    }
+    .social a {
+      margin-right: 10px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .tag {
+      background: rgba(255,255,255,.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: .6rem;
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+    .contact-form {
+      display: grid;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    input, textarea {
+      background: #0f111a;
+      border: 1px solid rgba(255,255,255,.15);
+      padding: 12px;
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 1rem;
+      resize: vertical;
+    }
+    .small {
+      font-size: .8rem;
+      color: rgba(255,255,255,.6);
+    }
+    .inline-block {
+      display: inline-block;
+    }
+    @media(min-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+      }
+      h1 {
+        font-size: 3rem;
+      }
     }
   </style>
 </head>
@@ -100,9 +227,8 @@
         <p>Endüstriyel tasarım, CNC işleme, özel makine sistemleri ve hızlı prototip çözümleri. Bursa / Türkiye merkezli, sonuç odaklı mühendislik.</p>
         <a class="btn" href="#projeler">Projelerime Bak</a>
       </div>
-   <div class="hero-image">
-  <img src="assets/CNCR3.png" alt="Proje Görseli" style="width:100%; border-radius:12px;" />
-</div>
+      <div class="hero-image">
+        <img src="assets/CNCR3.png" alt="Proje Görseli" />
       </div>
     </section>
 
@@ -115,17 +241,23 @@
         <div class="card">
           <h3>CNC & Parça İmalatı</h3>
           <p>Özel parçalar, prototipler ve düşük adetli üretim için CNC torna/freze çözümleri. Hızlı geri dönüş, hassas işleme.</p>
-          <div class="tag">Torna</div><div class="tag">Freze</div><div class="tag">Toleranslı</div>
+          <div class="tag">Torna</div>
+          <div class="tag">Freze</div>
+          <div class="tag">Toleranslı</div>
         </div>
         <div class="card">
           <h3>Makine Tasarımı</h3>
           <p>Özel makineler, besleyici sistemler (vibratory bowl feeder, line art makinesi), entegrasyon ve mekanik tasarım.</p>
-          <div class="tag">Bowl Feeder</div><div class="tag">Line Art</div><div class="tag">Prototip</div>
+          <div class="tag">Bowl Feeder</div>
+          <div class="tag">Line Art</div>
+          <div class="tag">Prototip</div>
         </div>
         <div class="card">
           <h3>Hızlı Prototip & Entegrasyon</h3>
           <p>3D baskı, elektronik entegrasyon, test sistemleri hazırlayıp sahaya uyarlıyorum. Sıfırdan çalışan çözümler.</p>
-          <div class="tag">3D Baskı</div><div class="tag">Elektronik</div><div class="tag">Test</div>
+          <div class="tag">3D Baskı</div>
+          <div class="tag">Elektronik</div>
+          <div class="tag">Test</div>
         </div>
       </div>
     </section>
@@ -162,7 +294,7 @@
               <input type="text" name="İsim" placeholder="İsim / Firma" required />
               <input type="email" name="E-posta" placeholder="E-posta" required />
               <textarea name="Detay" rows="4" placeholder="Kısa proje özeti / ne istiyorsun" required></textarea>
-              <button type="submit" class="btn" style="border:none;cursor:pointer;">Gönder</button>
+              <button type="submit" class="btn">Gönder</button>
             </form>
             <div class="small">Alternatif: <a href="mailto:info@rfsmakine.com" style="color:var(--accent);text-decoration:none;">info@rfsmakine.com</a></div>
           </div>
@@ -190,5 +322,3 @@
   </div>
 </body>
 </html>
-
-
